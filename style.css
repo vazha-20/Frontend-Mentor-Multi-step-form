@@ -1,0 +1,61 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container for the multi-step form */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Step indicator */
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step-indicator .step {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: #ddd;
+    color: #fff;
+    font-weight: bold;
+}
+
+.step-indicator .step.active {
+    background: #007bff;
+}
+
+/* Form navigation buttons */
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-navigation button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-navigation button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
